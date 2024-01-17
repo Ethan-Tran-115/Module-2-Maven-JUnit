@@ -24,6 +24,12 @@ public class TestStudent {
         student.setName("Caitlyn");
         assertEquals("Caitlyn", student.getName());
     }
+	
+	@Test
+    public void testNotStudentName() {
+        student.setName("Caitlyn");
+        assertNotEquals("Nina", student.getName());
+    }
 
     @Test
     public void testStudentGrade() {
